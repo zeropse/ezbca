@@ -5,16 +5,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const subjectNotes = {
-  "aptitude-notes": [
-    { title: "Introduction to Aptitude", link: "#" },
-    { title: "Numerical Ability", link: "#" },
-    { title: "Verbal Reasoning", link: "#" },
-  ],
-  "spm-notes": [
-    { title: "Software Project Planning", link: "#" },
-    { title: "Risk Management", link: "#" },
-    { title: "Project Scheduling", link: "#" },
-  ],
+  "aptitude-notes": [],
+  "spm-notes": [{ title: "IMCASWPM1", link: "#" }],
+  "english-grooming-notes": [],
+  "cloud-computing-notes": [],
+  "professional-ethics-notes": [],
+  "data-science-r-notes": [],
+  "data-science-r-lab-notes": [],
+  "casd-notes": [],
+  "casd-lab-notes": [],
 };
 
 const SubjectContent = () => {
