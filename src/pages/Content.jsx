@@ -1,22 +1,13 @@
-const Content = () => {
-  const subjects = [
-    { name: "Aptitude", link: "/aptitude-notes" },
-    { name: "SPM", link: "/spm-notes" },
-    { name: "English Grooming", link: "/english-grooming-notes" },
-    { name: "Cloud Computing", link: "/cloud-computing-notes" },
-    { name: "Professional Ethics", link: "/professional-ethics-notes" },
-    { name: "DATA Science R", link: "/data-science-r-notes" },
-    { name: "DATA Science R - LAB", link: "/data-science-r-lab-notes" },
-    { name: "CASD", link: "/casd-notes" },
-    { name: "CASD - LAB", link: "/casd-lab-notes" },
-  ];
+import subjects from "../data/subjects";
+import { Link } from "react-router-dom";
 
+const Content = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-50 to-gray-100 p-8">
       <header className="py-4 fixed top-0 left-0 right-0 z-20">
         <div className="container mx-auto flex justify-center">
           <img
-            src="full-logo.png"
+            src="/full-logo.png"
             alt="BCA Made Easy"
             className="h-16 md:h-20 w-auto"
           />
@@ -32,11 +23,15 @@ const Content = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
           {subjects.map((subject, index) => (
-            <a key={index} href={subject.link} className="w-full">
+            <Link
+              key={index}
+              to={`/content/${subject.slug}`}
+              className="w-full"
+            >
               <button className="bg-blue-500 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 cursor-pointer w-full border border-blue-600 hover:border-blue-700">
                 {subject.name}
               </button>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
