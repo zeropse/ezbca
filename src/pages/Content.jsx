@@ -1,18 +1,12 @@
 import subjects from "../data/subjects";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Content = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-50 to-gray-100 p-8">
-      <header className="py-4 fixed top-0 left-0 right-0 z-20">
-        <div className="container mx-auto flex justify-center">
-          <img
-            src="/full-logo.png"
-            alt="BCA Made Easy"
-            className="h-16 md:h-20 w-auto"
-          />
-        </div>
-      </header>
+      <Header />
       <div className="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-4xl text-center border border-gray-200">
         <h1 className="text-5xl font-extrabold text-blue-700 mb-8">Contents</h1>
         <div className="mb-8">
@@ -35,25 +29,7 @@ const Content = () => {
           ))}
         </div>
       </div>
-      <footer className="bg-white/30 backdrop-blur-md shadow-md py-4 fixed bottom-0 left-0 right-0 text-center z-20">
-        <div className="container mx-auto">
-          <span className="font-bold">
-            Made by{" "}
-            <a
-              href="https://zeropse.xyz"
-              className="text-blue-500 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              zeropse
-            </a>
-          </span>
-          <p className="text-sm text-gray-800 mt-2">
-            &copy; {new Date().getFullYear()} BCA Made Easy. All rights
-            reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

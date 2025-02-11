@@ -1,5 +1,7 @@
 import BackgroundSlider from "../components/BackgroundSlider";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -7,15 +9,7 @@ const Home = () => {
   return (
     <div className="relative min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-white/30 backdrop-blur-md shadow-md py-4 fixed top-0 left-0 right-0 z-20">
-        <div className="container mx-auto flex justify-center">
-          <img
-            src="full-logo.png"
-            alt="BCA Made Easy"
-            className="h-16 md:h-20 w-auto"
-          />
-        </div>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main className="flex-grow flex items-center justify-center relative">
@@ -35,25 +29,7 @@ const Home = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white/30 backdrop-blur-md shadow-md py-4 fixed bottom-0 left-0 right-0 text-center z-20">
-        <div className="container mx-auto">
-          <span className="font-bold">
-            Made by{" "}
-            <a
-              href="https://zeropse.xyz"
-              className="text-blue-500 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              zeropse
-            </a>
-          </span>
-          <p className="text-sm text-gray-800 mt-2">
-            &copy; {new Date().getFullYear()} BCA Made Easy. All rights
-            reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
