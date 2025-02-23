@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className="py-4 fixed top-0 left-0 right-0 z-20 bg-white/80 backdrop-blur-md shadow-md">
       <div className="container mx-auto flex justify-center">
@@ -6,6 +9,8 @@ const Header = () => {
           src="/full-logo.png"
           alt="BCA Made Easy"
           className="h-16 md:h-20 w-auto"
+          onClick={() => navigate("/")}
+          style={{ cursor: "pointer" }}
         />
       </div>
     </header>

@@ -3,18 +3,7 @@ import subjects from "../data/subjects";
 import NotFound from "../pages/NotFound";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
-const subjectNotes = {
-  "aptitude-notes": [],
-  "spm-notes": [{ title: "IMCASWPM1", link: "#" }],
-  "english-grooming-notes": [],
-  "cloud-computing-notes": [],
-  "professional-ethics-notes": [],
-  "data-science-r-notes": [],
-  "data-science-r-lab-notes": [],
-  "casd-notes": [],
-  "casd-lab-notes": [],
-};
+import subjectNotes from "../data/subjectNotes";
 
 const SubjectContent = () => {
   const { slug } = useParams();
@@ -43,6 +32,7 @@ const SubjectContent = () => {
               <li key={index}>
                 <Link
                   to={note.link}
+                  target="_blank"
                   className="block bg-blue-100 text-blue-700 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-200 transition-all duration-300"
                 >
                   {note.title}
@@ -51,9 +41,15 @@ const SubjectContent = () => {
             ))}
           </ul>
         ) : (
-          <p className="text-xl text-gray-600">
-            No notes available for this subject yet.
-          </p>
+          <div className="flex flex-col items-center justify-center">
+            <p className="text-xl text-gray-600">
+              No notes available for this subject yet.
+            </p>
+            <p className="text-xl text-gray-600">
+              If you have any notes for this subject, please share them with the
+              site owner.
+            </p>
+          </div>
         )}
         <Link
           to="/content"
