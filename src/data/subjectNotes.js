@@ -11,9 +11,14 @@ const subjectNotes = {
       link: "https://drive.google.com/file/d/1LXNby9LV3OYieCfdUb5v1KFOgJGHMyPk/view?usp=drive_link",
     },
   ],
-  "english-grooming-notes": [],
-  "cloud-computing-notes": [],
+  "cloud-computing-notes": [
+    {
+      title: "Cloud Computing",
+      link: "https://docs.google.com/document/d/10QbfMlSROltRe_ftWFSZHb0n64VOl_3Btq8KclZPiuw/edit?usp=drive_link",
+    },
+  ],
   "professional-ethics-notes": [],
+  "english-grooming-notes": [],
   "data-science-r-notes": [],
   "data-science-r-lab-notes": [],
   "casd-notes": [],
