@@ -22,7 +22,12 @@ const subjectNotes = {
   "data-science-r-notes": [],
   "data-science-r-lab-notes": [],
   "casd-notes": [],
-  "casd-lab-notes": [],
+  "casd-lab-notes": [
+    {
+      title: "Lab 1+2 Codes",
+      link: "https://drive.google.com/file/d/1AkXqi86N0F6P72-g3r1UuEiyd5tf6hTC/view?usp=drive_link",
+    },
+  ],
 };
 
 export default subjectNotes;
