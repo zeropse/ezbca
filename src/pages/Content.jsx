@@ -1,11 +1,23 @@
 import { Link } from "react-router-dom";
 import subjects from "../data/subjects";
-
+import { Toaster, toast } from "react-hot-toast";
+import { useRef, useEffect } from "react";
 const Content = () => {
+  const toastShown = useRef(false);
+
+  useEffect(() => {
+    if (!toastShown.current) {
+      toast.error(
+        "English Grooming, Data Science - R (Theory+Lab) Notes not yet added"
+      );
+      toastShown.current = true;
+    }
+  }, []);
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-50 to-gray-100">
       <main className="flex-grow flex items-center justify-center px-4 py-8 sm:px-6 lg:px-8">
         <div className="bg-white shadow-2xl rounded-2xl p-6 sm:p-8 lg:p-10 w-full max-w-4xl text-center border border-gray-200">
+          <Toaster position="top-right" reverseOrder={false} />
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-700 mb-4 sm:mb-6 lg:mb-8">
             Contents
           </h1>
