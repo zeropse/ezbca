@@ -25,7 +25,12 @@ const subjectNotes = {
       link: "https://docs.google.com/document/d/10QbfMlSROltRe_ftWFSZHb0n64VOl_3Btq8KclZPiuw/edit?usp=drive_link",
     },
   ],
-  "professional-ethics-notes": [],
+  "professional-ethics-notes": [
+    {
+      title: "Professional Ethics",
+      link: "https://docs.google.com/document/d/10BgrwglIiTDoVu3YlDwa-RX4u8Iz9b1tpy-756l2J30/edit?usp=drive_link",
+    },
+  ],
   "english-grooming-notes": [],
   "data-science-r-notes": [],
   "data-science-r-lab-notes": [],
