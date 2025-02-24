@@ -1,17 +1,11 @@
 import BackgroundSlider from "../components/BackgroundSlider";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
     <div className="relative min-h-screen flex flex-col">
-      {/* Header */}
-      <Header />
-
-      {/* Main Content */}
       <main className="flex-grow flex items-center justify-center relative">
         <BackgroundSlider />
         <div className="text-center z-10 px-6">
@@ -27,9 +21,6 @@ const Home = () => {
           </button>
         </div>
       </main>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };
