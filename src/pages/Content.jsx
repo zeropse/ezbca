@@ -8,7 +8,10 @@ const Content = () => {
   useEffect(() => {
     if (!toastShown.current) {
       toast.error(
-        "English Grooming, Data Science - R (Theory+Lab) Notes not yet added"
+        "English Grooming, Data Science - R (Theory+Lab) Notes not yet added",
+        {
+          duration: 1300,
+        }
       );
       toastShown.current = true;
     }
