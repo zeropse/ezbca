@@ -41,8 +41,8 @@ const subjectNotes = {
   ],
   "casd-lab-notes": [
     {
-      title: "Lab 1+2 Codes",
-      link: "https://drive.google.com/file/d/1AkXqi86N0F6P72-g3r1UuEiyd5tf6hTC/view?usp=drive_link",
+      title: "Codes",
+      link: "https://drive.google.com/file/d/1WymJXRaFY4OwUI5oB1fRZfdt1SRjtTUI/view?usp=drive_link",
     },
   ],
 };
