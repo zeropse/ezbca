@@ -2,17 +2,15 @@ import { Link } from "react-router-dom";
 import subjects from "../data/subjects";
 import { Toaster, toast } from "react-hot-toast";
 import { useRef, useEffect } from "react";
+
 const Content = () => {
   const toastShown = useRef(false);
 
   useEffect(() => {
     if (!toastShown.current) {
-      toast.error(
-        "English Grooming, Data Science - R (Theory+Lab) Notes not yet added",
-        {
-          duration: 1300,
-        }
-      );
+      toast.error("No Notes Added for Data Science - R", {
+        duration: 1300,
+      });
       toastShown.current = true;
     }
   }, []);

@@ -31,7 +31,6 @@ const subjectNotes = {
       link: "https://docs.google.com/document/d/10BgrwglIiTDoVu3YlDwa-RX4u8Iz9b1tpy-756l2J30/edit?usp=drive_link",
     },
   ],
-  "english-grooming-notes": [],
   "data-science-r-notes": [],
   "data-science-r-lab-notes": [],
   "casd-notes": [

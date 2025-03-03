@@ -1,7 +1,6 @@
 const subjects = [
   { name: "Aptitude", slug: "aptitude-notes" },
   { name: "SPM", slug: "spm-notes" },
-  { name: "English Grooming", slug: "english-grooming-notes" },
   { name: "Cloud Computing", slug: "cloud-computing-notes" },
   { name: "Professional Ethics", slug: "professional-ethics-notes" },
   { name: "Data Science R", slug: "data-science-r-notes" },
