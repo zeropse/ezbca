@@ -51,7 +51,7 @@ const SubjectContent = () => {
                     href={note.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-blue-50 text-blue-700 px-6 py-4 rounded-xl text-lg font-semibold hover:bg-blue-100 transition-all duration-300 border border-blue-200 shadow-sm flex items-center justify-between"
+                    className="bg-blue-50 text-blue-700 px-6 py-4 rounded-xl text-lg font-semibold hover:bg-blue-100 transition-all duration-300 border border-blue-200 shadow-sm flex items-center justify-between"
                   >
                     <span>{note.title}</span>
                     <svg

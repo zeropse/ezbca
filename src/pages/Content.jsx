@@ -16,7 +16,7 @@ const Content = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-50 to-gray-100">
+    <div className="flex flex-col py-15 min-h-screen bg-gradient-to-b from-blue-50 to-gray-100">
       <main className="flex-grow flex items-center justify-center px-4 py-8 sm:px-6 lg:px-8">
         <div className="bg-white shadow-2xl rounded-2xl p-6 sm:p-8 lg:p-10 w-full max-w-4xl text-center border border-gray-200">
           <Toaster position="top-right" reverseOrder={false} />
